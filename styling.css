@@ -1,0 +1,74 @@
+body {
+background: rgb(200,86,180);
+background: linear-gradient(60deg,
+ rgba(200,86,180,1) 0%,
+ rgba(43,35,193,1) 0%,
+ rgba(200,86,180,1) 69%);
+}
+#container {
+  height: 50%;
+  width: 30%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+   rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#tit {
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15); 
+}
+strong {
+  border-bottom:  3px solid indigo ;
+}
+
+button {
+  background: indigo;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+#add-task-btn {
+     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+   rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+   rgba(240, 46, 170, 0.05) 25px 25px;
+    color: indigo;
+}
+#sort-task-btn {
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+     rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px,
+     rgba(240, 46, 170, 0.05) -25px 25px;
+     color: indigo;
+}
+#close-btn{
+    background-color: white;
+    color: indigo;
+}
+
+input {
+
+}
+#hover {
+ --s: 0.1em;   /* the thickness of the line */
+  --c: #1095c1; /* the color */
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+  linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+  linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+  background-clip: text,padding-box;
+  transition: 0.5s;
+}
+
+#hover:hover {
+  --_p: 100%
+}
